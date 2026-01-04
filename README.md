@@ -1,206 +1,179 @@
-[![Actions Status](https://github.com/filipdutescu/modern-cpp-template/workflows/MacOS/badge.svg)](https://github.com/filipdutescu/modern-cpp-template/actions)
-[![Actions Status](https://github.com/filipdutescu/modern-cpp-template/workflows/Windows/badge.svg)](https://github.com/filipdutescu/modern-cpp-template/actions)
-[![Actions Status](https://github.com/filipdutescu/modern-cpp-template/workflows/Ubuntu/badge.svg)](https://github.com/filipdutescu/modern-cpp-template/actions)
-[![codecov](https://codecov.io/gh/filipdutescu/modern-cpp-template/branch/master/graph/badge.svg)](https://codecov.io/gh/filipdutescu/modern-cpp-template)
-[![GitHub release (latest by date)](https://img.shields.io/github/v/release/filipdutescu/modern-cpp-template)](https://github.com/filipdutescu/modern-cpp-template/releases)
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://github.com/Unintellectual/repo_name">
+    <img src="assets/clippy.png" alt="Logo" width="80" height="80">
+  </a>
 
-# Modern C++ Template
+<h3 align="center">project_title</h3>
 
-A quick C++ template for modern CMake projects, aimed to be an easy to use
-starting point.
+  <p align="center">
+    project_description
+<!--     <br />
+    <a href="https://github.com/Unintellectual/repo_name"><strong>Explore the docs »</strong></a>
+    <br />
+ -->    <br />
+    <a href="https://github.com/Unintellectual/repo_name">View Demo</a>
+    &middot;
+    <a href="https://github.com/Unintellectual/repo_name/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
+    &middot;
+    <a href="https://github.com/Unintellectual/repo_name/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
+  </p>
+</div>
 
-This is my personal take on such a type of template, thus I might not use the
-best practices or you might disagree with how I do things. Any and all feedback
-is greatly appreciated!
 
-## Features
 
-* Modern **CMake** configuration and project, which, to the best of my
-knowledge, uses the best practices,
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#acknowledgments">Acknowledgments</a></li>
+  </ol>
+</details>
 
-* An example of a **Clang-Format** config, inspired from the base *Google* model,
-with minor tweaks. This is aimed only as a starting point, as coding style
-is a subjective matter, everyone is free to either delete it (for the *LLVM*
-default) or supply their own alternative,
 
-* **Static analyzers** integration, with *Clang-Tidy* and *Cppcheck*, the former
-being the default option,
 
-* **Doxygen** support, through the `ENABLE_DOXYGEN` option, which you can enable
-if you wish to use it,
+<!-- ABOUT THE PROJECT -->
+## About The Project
 
-* **Unit testing** support, through *GoogleTest* (with an option to enable
-*GoogleMock*) or *Catch2*,
+[![Clippy][product-screenshot]](assets/clippy.png)
 
-* **Code coverage**, enabled by using the `ENABLE_CODE_COVERAGE` option, through
-*Codecov* CI integration,
 
-* **Package manager support**, with *Conan* and *Vcpkg*, through their respective
-options
+### Built With
 
-* **CI workflows for Windows, Linux and MacOS** using *GitHub Actions*, making
-use of the caching features, to ensure minimum run time,
+* [![C++][Cpp.logo]][Cpp-url]
+* [![CMake][Cmake.logo]][Cmake-url]
 
-* **.md templates** for: *README*, *Contributing Guideliness*,
-*Issues* and *Pull Requests*,
 
-* **Permissive license** to allow you to integrate it as easily as possible. The
-template is licensed under the [Unlicense](https://unlicense.org/),
 
-* Options to build as a header-only library or executable, not just a static or
-shared library.
 
-* **Ccache** integration, for speeding up rebuild times
 
+<!-- GETTING STARTED -->
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local
-machine for development and testing purposes.
+This is an example of how you may give instructions on setting up your project locally.
+To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-This project is meant to be only a template, thus versions of the software used
-can be change to better suit the needs of the developer(s). If you wish to use the
-template *as-is*, meaning using the versions recommended here, then you will need:
+This is an example of how to list things you need to use the software and how to install them.
+  ```md
+  cmake 
+  clang // gcc 
+  git 
+  ```
 
-* **CMake v3.15+** - found at [https://cmake.org/](https://cmake.org/)
+### Installation
 
-* **C++ Compiler** - needs to support at least the **C++17** standard, i.e. *MSVC*,
-*GCC*, *Clang*
+1. Clone the repo
+   ```sh
+   git clone https://github.com/Unintellectual/repo_name.git
+   ```
+2. Build && Install
+   ```sh
+   mkdir build/ && cd build/
+   cmake .. -DCMAKE_INSTALL_PREFIX=/absolute/path/to/custom/install/directory
+   cmake --build build --target install --config Release
+   # or 
+   cmake --build <build_directory> --target install --config <desired_config>
+   ```
 
-> ***Note:*** *You also need to be able to provide ***CMake*** a supported
-[generator](https://cmake.org/cmake/help/latest/manual/cmake-generators.7.html).*
 
-### Installing
+<!-- USAGE EXAMPLES -->
+## Usage
 
-It is fairly easy to install the project, all you need to do is clone if from
-[GitHub](https://github.com/filipdutescu/modern-cpp-template) or
-[generate a new repository from it](https://github.com/filipdutescu/modern-cpp-template/generate)
-(also on **GitHub**).
+Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
-If you wish to clone the repository, rather than generate from it, you simply need
-to run:
+_For more examples, please refer to the [Documentation](https://example.com)_
 
-```bash
-git clone https://github.com/filipdutescu/modern-cpp-template/
-```
 
-After finishing getting a copy of the project, with any of the methods above, create
-a new folder in the `include/` folder, with the name of your project.  Edit
-`cmake/SourcesAndHeaders.cmake` to add your files.
 
-You will also need to rename the `cmake/ProjectConfig.cmake.in` file to start with
-the ***exact name of your project***. Such as `cmake/MyNewProjectConfig.cmake.in`.
-You should also make the same changes in the GitHub workflows provided, notably
-[`.github/workflows/ubuntu.yml`](.github/workflows/ubuntu.yml), in which you should
-replace the CMake option `-DProject_ENABLE_CODE_COVERAGE=1` to
-`-DMyNewProject_ENABLE_CODE_COVERAGE=1`.
 
-Finally, change `"Project"` from `CMakeLists.txt`, from
+<!-- ROADMAP -->
+## Roadmap
 
-```cmake
-project(
-  "Project"
-  VERSION 0.1.0
-  LANGUAGES CXX
-)
-```
+- [ ] Feature 1
+- [ ] Feature 2
+- [ ] Feature 3
+    - [ ] Nested Feature
 
-to the ***exact name of your project***, i.e. using the previous name it will become:
+See the [open issues](https://github.com/Unintellectual/repo_name/issues) for a full list of proposed features (and known issues).
 
-```cmake
-project(
-  MyNewProject
-  VERSION 0.1.0
-  LANGUAGES CXX
-)
-```
 
-To install an already built project, you need to run the `install` target with CMake.
-For example:
 
-```bash
-cmake --build build --target install --config Release
 
-# a more general syntax for that command is:
-cmake --build <build_directory> --target install --config <desired_config>
-```
-
-## Building the project
-
-To build the project, all you need to do, ***after correctly
-[installing the project](README.md#Installing)***, is run a similar **CMake** routine
-to the the one below:
-
-```bash
-mkdir build/ && cd build/
-cmake .. -DCMAKE_INSTALL_PREFIX=/absolute/path/to/custom/install/directory
-cmake --build . --target install
-```
-
-> ***Note:*** *The custom ``CMAKE_INSTALL_PREFIX`` can be omitted if you wish to
-install in [the default install location](https://cmake.org/cmake/help/latest/module/GNUInstallDirs.html).*
-
-More options that you can set for the project can be found in the
-[`cmake/StandardSettings.cmake` file](cmake/StandardSettings.cmake). For certain
-options additional configuration may be needed in their respective `*.cmake` files
-(i.e. Conan needs the `CONAN_REQUIRES` and might need the `CONAN_OPTIONS` to be setup
-for it work correctly; the two are set in the [`cmake/Conan.cmake` file](cmake/Conan.cmake)).
-
-## Generating the documentation
-
-In order to generate documentation for the project, you need to configure the build
-to use Doxygen. This is easily done, by modifying the workflow shown above as follows:
-
-```bash
-mkdir build/ && cd build/
-cmake .. -D<project_name>_ENABLE_DOXYGEN=1 -DCMAKE_INSTALL_PREFIX=/absolute/path/to/custom/install/directory
-cmake --build . --target doxygen-docs
-```
-
-> ***Note:*** *This will generate a `docs/` directory in the **project's root directory**.*
-
-## Running the tests
-
-By default, the template uses [Google Test](https://github.com/google/googletest/)
-for unit testing. Unit testing can be disabled in the options, by setting the
-`ENABLE_UNIT_TESTING` (from
-[cmake/StandardSettings.cmake](cmake/StandardSettings.cmake)) to be false. To run
-the tests, simply use CTest, from the build directory, passing the desire
-configuration for which to run tests for. An example of this procedure is:
-
-```bash
-cd build          # if not in the build directory already
-ctest -C Release  # or `ctest -C Debug` or any other configuration you wish to test
-
-# you can also run tests with the `-VV` flag for a more verbose output (i.e.
-#GoogleTest output as well)
-```
-
-### End to end tests
-
-If applicable, should be presented here.
-
-### Coding style tests
-
-If applicable, should be presented here.
-
+<!-- CONTRIBUTING -->
 ## Contributing
 
-Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our how you can
-become a contributor and the process for submitting pull requests to us.
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-## Versioning
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
+Don't forget to give the project a star! Thanks again!
 
-This project makes use of [SemVer](http://semver.org/) for versioning. A list of
-existing versions can be found in the
-[project's releases](https://github.com/filipdutescu/modern-cpp-template/releases).
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-## Authors
 
-* **Filip-Ioan Dutescu** - [@filipdutescu](https://github.com/filipdutescu)
+### Top contributors:
 
+<a href="https://github.com/Unintellectual/repo_name/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Unintellectual/repo_name" alt="contrib.rocks image" />
+</a>
+
+
+
+<!-- LICENSE -->
 ## License
 
-This project is licensed under the [Unlicense](https://unlicense.org/) - see the
+This project is licensed under the [GPLv2](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html) - see the
 [LICENSE](LICENSE) file for details
+
+
+<!-- CONTACT -->
+## Contact
+
+ - [Linkedin](https://www.linkedin.com/in/noah-victoriano-2621343a3/) 
+ - [Email](mailto:official.noah.victoriano@gmail.com) 
+
+
+
+<!-- ACKNOWLEDGMENTS -->
+## Acknowledgments
+
+* [Wikipedia](https://www.wikipedia.org/)
+* []()
+* []()
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+<!-- MARKDOWN LINKS & IMAGES -->
+[product-screenshot]: assets/screenshot.png
+<!-- Shields.io badges. You can a comprehensive list with many more badges at: https://github.com/inttter/md-badges -->
+[Cpp.logo]: https://img.shields.io/badge/C++-00599C?style=flat-square&logo=C%2B%2B&logoColor=white
+[Cpp-url]: https://cplusplus.com/
+[Cmake.logo]: https://img.shields.io/badge/CMake-064F8C?logo=cmake&logoColor=fff
+[Cmake-url]: https://cmake.org/
+[product-screenshot]: assets/clippy.png

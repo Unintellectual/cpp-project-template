@@ -1,5 +1,5 @@
 ---
-BasedOnStyle: Google
+BasedOnStyle: Webkit
 AlignAfterOpenBracket: 'AlwaysBreak'
 AllowAllConstructorInitializersOnNextLine: 'false'
 AllowAllParametersOfDeclarationOnNextLine: 'false'
@@ -8,11 +8,10 @@ AllowShortCaseLabelsOnASingleLine: 'true'
 AllowShortFunctionsOnASingleLine: 'None'
 AllowShortIfStatementsOnASingleLine: 'Never'
 AllowShortLoopsOnASingleLine: 'false'
-BreakBeforeBraces: Allman
 BinPackArguments: 'false'
 BinPackParameters: 'false'
 Cpp11BracedListStyle: 'false'
-ColumnLimit: 125 
+ColumnLimit: 120
 NamespaceIndentation: All
 SpaceAfterTemplateKeyword: 'false'
 SpaceBeforeCtorInitializerColon: 'true'
