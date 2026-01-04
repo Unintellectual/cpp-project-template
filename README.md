@@ -54,7 +54,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Clippy][product-screenshot]](https://en.wikipedia.org/wiki/Turtle)
+[![Clippy][product-screenshot]](product-screenshot)
 
 
 ### Built With
