@@ -54,7 +54,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Clippy][product-screenshot]](product-screenshot)
+[![Clippy][product-screenshot]](assets/clippy.png)
 
 
 ### Built With
