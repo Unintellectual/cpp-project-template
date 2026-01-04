@@ -2,17 +2,17 @@
 <br />
 <div align="center">
   <a href="https://github.com/Unintellectual/repo_name">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="assets/clippy.png" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">project_title</h3>
 
   <p align="center">
     project_description
-    <br />
+<!--     <br />
     <a href="https://github.com/Unintellectual/repo_name"><strong>Explore the docs »</strong></a>
     <br />
-    <br />
+ -->    <br />
     <a href="https://github.com/Unintellectual/repo_name">View Demo</a>
     &middot;
     <a href="https://github.com/Unintellectual/repo_name/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
@@ -54,12 +54,14 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![Clippy][product-screenshot]](https://en.wikipedia.org/wiki/Turtle)
 
 
 ### Built With
 
-* [![C++][Cpp]][https://cplusplus.com/]
+* [![C++][Cpp.logo]][Cpp-url]
+* [![CMake][Cmake.logo]][Cmake-url]
+
 
 
 
@@ -73,33 +75,26 @@ To get a local copy up and running follow these simple example steps.
 ### Prerequisites
 
 This is an example of how to list things you need to use the software and how to install them.
-* bash
-  ```sh
-  npm install npm@latest -g
+  ```md
+  cmake 
+  clang // gcc 
+  git 
   ```
 
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Clone the repo
    ```sh
    git clone https://github.com/Unintellectual/repo_name.git
    ```
-3. Install NPM packages
+2. Build && Install
    ```sh
-   npm install
+   mkdir build/ && cd build/
+   cmake .. -DCMAKE_INSTALL_PREFIX=/absolute/path/to/custom/install/directory
+   cmake --build build --target install --config Release
+   # or 
+   cmake --build <build_directory> --target install --config <desired_config>
    ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
-5. Change git remote url to avoid accidental pushes to base project
-   ```sh
-   git remote set-url origin github_username/repo_name
-   git remote -v # confirm the changes
-   ```
-
-
 
 
 <!-- USAGE EXAMPLES -->
@@ -120,7 +115,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 - [ ] Feature 3
     - [ ] Nested Feature
 
-See the [open issues](https://github.com/github_username/repo_name/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/Unintellectual/repo_name/issues) for a full list of proposed features (and known issues).
 
 
 
@@ -151,24 +146,22 @@ Don't forget to give the project a star! Thanks again!
 <!-- LICENSE -->
 ## License
 
-Distributed under the project_license. See `LICENSE` for more information.
-
-
+This project is licensed under the [GPLv2](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html) - see the
+[LICENSE](LICENSE) file for details
 
 
 <!-- CONTACT -->
 ## Contact
 
-Noah Victoriano- [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
-
-Project Link: [https://github.com/Unintellectual/repo_name](https://github.com/Unintellectual/repo_name)
+ - [Linkedin](https://www.linkedin.com/in/noah-victoriano-2621343a3/) 
+ - [Email](mailto:official.noah.victoriano@gmail.com) 
 
 
 
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-* []()
+* [Wikipedia](https://www.wikipedia.org/)
 * []()
 * []()
 
@@ -179,4 +172,8 @@ Project Link: [https://github.com/Unintellectual/repo_name](https://github.com/U
 <!-- MARKDOWN LINKS & IMAGES -->
 [product-screenshot]: assets/screenshot.png
 <!-- Shields.io badges. You can a comprehensive list with many more badges at: https://github.com/inttter/md-badges -->
-[C++]: https://img.shields.io/badge/C++-00599C?style=flat-square&logo=C%2B%2B&logoColor=white
+[Cpp.logo]: https://img.shields.io/badge/C++-00599C?style=flat-square&logo=C%2B%2B&logoColor=white
+[Cpp-url]: https://cplusplus.com/
+[Cmake.logo]: https://img.shields.io/badge/CMake-064F8C?logo=cmake&logoColor=fff
+[Cmake-url]: https://cmake.org/
+[product-screenshot]: assets/clippy.png
